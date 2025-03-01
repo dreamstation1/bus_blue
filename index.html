@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 버스 위치</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>🚍 실시간 버스 위치</h2>
+    
+    <!-- 🔹 사용자가 버스 노선을 선택하는 부분 -->
+    <label for="bus-select">버스 노선 선택:</label>
+    <select id="bus-select">
+        <option value="114900001">양천01</option>
+        <option value="100100300">6620번</option>
+        <option value="100100302">6624번</option>
+        <option value="100100312">6637번</option>
+        <option value="100100088">603번</option>
+        <option value="111000008">674번</option>
+        <option value="100100304">6627번</option>
+        <option value="114900002">양천02</option>
+        <option value="100100440">700번</option>
+        <option value="100100588">N62번</option>
+        <option value="100100593">N13번</option>
+        <option value="100100610">N15번</option>
+        <option value="115000010">N64번</option>
+        <option value="100100589">N61번</option>
+        <option value="114900003">양천03번</option>
+        <option value="116900018">양천04번</option>
+        <option value="100100277">5620번</option>
+        <option value="100100288">5714번</option>
+        <option value="100100538">공항6018번</option>
+        <option value="100100090">605번</option>
+    </select>
+    <button onclick="loadBusRoute()">노선 불러오기</button>
+
+    <!-- 🔹 버스 정류장 & 위치 표시할 공간 -->
+    <div id="route-container"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

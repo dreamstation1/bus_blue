@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.bus-route {
+    position: relative;
+    width: 200px;
+    margin: 20px auto;
+    border-left: 4px solid green;
+    padding-left: 20px;
+}
+
+.station {
+    position: relative;
+    padding: 10px 0;
+}
+
+.station::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: white;
+    border: 3px solid green;
+    border-radius: 50%;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bus {
+    position: absolute;
+    left: -40px;
+    width: 20px;
+    height: 20px;
+    background: blue;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.bus {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.bus-image {
+    width: 40px; /* 이미지 크기 조절 */
+    height: 40px;
+    margin-right: 10px;
+}
+
+.bus-info {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.bus-container {
+    display: flex;
+    flex-direction: row; /* 🚍 가로 정렬 */
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    margin-top: -30px; /* 🔼 선 위로 올리기 */
+}
+
+.bus-info {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left; /* 왼쪽 정렬 */
+    margin-bottom: 3px;
+    margin-right: 10px; /* 🚍 정보와 이미지 간격 조절 */
+    margin-left: -147px; /* ⬅ 차량 번호, 저상 여부, 혼잡도만 왼쪽 이동 */
+}
+
+.bus-image {
+    width: 40px;
+    height: auto;
+}
