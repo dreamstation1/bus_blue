@@ -74,7 +74,7 @@ body {
     text-align: left; /* 왼쪽 정렬 */
     margin-bottom: 3px;
     margin-right: 10px; /* 🚍 정보와 이미지 간격 조절 */
-    margin-left: -147px; /* ⬅ 차량 번호, 저상 여부, 혼잡도만 왼쪽 이동 */
+    margin-left: -150px; /* ⬅ 차량 번호, 저상 여부, 혼잡도만 왼쪽 이동 */
 }
 
 .bus-image {
