@@ -188,6 +188,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let footer = document.createElement("div");
     footer.style.textAlign = "center";
     footer.style.marginTop = "20px";
-    footer.innerHTML = "<p>제작자: 롯데월드매니아 / 승재</p>";
+    footer.innerHTML = "<p>제작자: 오승재,안윤찬,정시우</p>";
     document.body.appendChild(footer);
 });
